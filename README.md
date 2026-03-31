@@ -1,2 +1,3 @@
-# personal
-Any code I write that isn't explicitly for a school assignment
+# Damon Wargo's Personal code
+
+This is the repository containing all of my personal coding projects. Will be updated very erratically :D
