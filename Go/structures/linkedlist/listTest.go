@@ -1,15 +1,11 @@
 package linkedlist
 
-import (
-	"fmt"
-
-	"github.com/Damon-W-BSU/Personal/Go/linkedlist"
-)
+import "fmt"
 
 // basic test suite for list.go
 func TestList() {
 
-	L := linkedlist.New[int]()
+	L := New[int]()
 	fmt.Println(L)
 
 	// append stuff
@@ -32,7 +28,7 @@ func TestList() {
 
 	// peek stuff
 	fmt.Println("\nPEEK")
-	L = linkedlist.New[int]()
+	L = New[int]()
 	for i := range 3 {
 		L.Append(i)
 	}

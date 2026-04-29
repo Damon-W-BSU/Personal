@@ -1,5 +1,7 @@
 package sorting
 
+import "os"
+
 // swaps the values of two integers
 //
 func Swap(a *int, b *int) {
@@ -16,4 +18,12 @@ func IsSorted(list []int) bool {
 		}
 	}
 	return true
+}
+
+// dumps bytes to a text file for viewing
+func DumpToTxt(raw []byte) {
+	f, err := os.Create("sorting/dump.txt")
+	if err == nil {
+		f.Write(raw)
+	}
 }
